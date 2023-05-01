@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplaintHistory"
+    android:background="@mipmap/scs_background"
+    android:paddingTop="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle">
+
+        <TableRow
+            android:id="@+id/table_title_row1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_column1_complaint_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPLAINT TITLE"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/my_green"
+                android:layout_marginRight="50dp"/>
+
+            <TextView
+                android:id="@+id/txt_column2_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STATUS"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/my_green"
+                android:textAlignment="textEnd"
+                />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/table_row3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_column1_title1"
+                android:layout_width="100pt"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="textMultiLine"
+                android:text="Missing Script on CSC 351"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="17sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txt_row2_status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Declined"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/table_row6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_column1_title2"
+                android:layout_width="100pt"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="textMultiLine"
+                android:text="Missing Script on CSC 351"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="17sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txt_row2_status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approved"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/table_row4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_column1_title4"
+                android:layout_width="100pt"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="textMultiLine"
+                android:text="Missing Script on MAT 251 "
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="17sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txt_row2_status4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approved"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

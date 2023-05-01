@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeComplaintActivity"
+    android:background="@mipmap/scs_background"
+    android:padding="20dp"
+    android:paddingBottom="40dp">
+
+    <TextView
+        android:id="@+id/txt_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To the Department of:"
+        android:textSize="15sp"
+        android:textColor="@color/my_green"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true"
+        />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_department"
+        style="@style/text_input_layout_style"
+        android:layout_below="@id/txt_department">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            app:textInputLayoutFocusedRectEnabled="true" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txt_complaint_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Title"
+        android:textSize="17sp"
+        android:textColor="@color/my_green"
+        android:layout_below="@id/edittext_department"
+        android:layout_marginBottom="5dp"
+        />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_complaint_title"
+        style="@style/text_input_layout_style"
+        android:layout_below="@id/txt_complaint_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:textInputLayoutFocusedRectEnabled="true" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_complaint_box"
+        style="@style/text_input_layout_style"
+        android:layout_height="250dp"
+        android:layout_below="@id/edittext_complaint_title"
+        android:hint="Body of the Message"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/text_input_layout_style"
+            android:layout_height="match_parent"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:paddingTop="20dp"
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_complaint_box"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/txt_anonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anonymous"
+        android:textSize="20sp"
+        android:textColor="@color/my_green"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/btn_submit"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/txt_anonymous"
+        android:layout_alignBaseline="@id/txt_anonymous"
+        />
+
+</RelativeLayout>

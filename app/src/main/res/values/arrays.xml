@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unizik_faculty_items">
+        <item>Faculty of Agriculture</item>
+        <item>Faculty of Arts</item>
+        <item>Faculty of Basic Medical Sciences</item>
+        <item>Faculty of Biosciences</item>
+        <item>Faculty of Education</item>
+        <item>Faculty of Engineering</item>
+        <item>Faculty of Environmental Sciences</item>
+        <item>Faculty of Health Sciences and Technology</item>
+        <item>Faculty of Law</item>
+        <item>Faculty of Management Sciences</item>
+        <item>Faculty of Medicine</item>
+        <item>Faculty of Pharmaceutical Sciences</item>
+        <item>Faculty of Physical Sciences</item>
+        <item>Faculty of Social Sciences</item>
+        <item>Faculty of Veterinary Medicine</item>
+    </string-array>
+</resources>
